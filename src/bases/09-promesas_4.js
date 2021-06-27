@@ -16,9 +16,9 @@ const getHeroeByIdAsync = (id) => {
 }
 
 getHeroeByIdAsync(1)
-    .then(console.log)
-    .catch(console.warn);
+    .then(heroe => console.log('Heroe',heroe))
+    .catch(obj => console.warn('Error', obj));
 
 getHeroeByIdAsync(10)
-    .then(console.log)
-    .catch(console.warn);
+    .then(heroe => console.log('Heroe',heroe))
+    .catch(obj => console.warn('Error', obj));
